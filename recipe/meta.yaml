@@ -37,11 +37,11 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - gtk2
+    - gtk2 2.8.0
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - gtk2
+    - gtk2 2.8.0
 
 test:
   commands:
