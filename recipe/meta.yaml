@@ -35,13 +35,15 @@ requirements:
     - {{ posix }}make
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - gtk2
   host:
     - r-base
-    - gtk2 2.8.0
+    - gtk2
+    - glib
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - gtk2 2.8.0
+    - gtk2
 
 test:
   commands:
